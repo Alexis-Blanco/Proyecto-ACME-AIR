@@ -1,99 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro - ACME AIR</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <style>
-    .gradient-header {
-      background: linear-gradient(to right, #d63384, #5f72be);
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      padding: 30px 20px 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .gradient-header img {
-      width: 100px;
-      height: auto;
-    }
-
-    .form-section h1 {
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    select {
-      padding: 12px;
-      border: 1px solid #ccc;
-      background-color: #f9f9f9;
-      border-radius: 6px;
-      font-size: 14px;
-      transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
-
-    select:focus {
-      outline: none;
-      border-color: #2196F3;
-      background-color: #fff;
-      box-shadow: 0 0 6px rgba(33, 150, 243, 0.4);
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro | ACME AIR</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
-  <main class="container">
-    <section class="form-section">
-      <div class="gradient-header">
-        <img src="./assets/images/logoavion.png" alt="ACME AIR Logo">
-      </div>
-      <h1>Registro</h1>
-      <hr style="width: 80%; margin: 0 auto 20px; border: none; border-top: 1px solid #ddd;">
-      <form>
-        <input type="text" placeholder="Nombre Completo" required>
-        <input type="text" placeholder="No. Identificación" required>
-        <input type="text" placeholder="E-mail" required>
-        <input type="text" placeholder="Teléfono" required>
-        <select required>
-          <option value="" disabled selected>Ciudad</option>
-          <option value="apartado">Apartadó</option>
-          <option value="armenia">Armenia</option>
-          <option value="barranquilla">Barranquilla</option>
-          <option value="bogota">Bogotá</option>
-          <option value="bucaramanga">Bucaramanga</option>
-          <option value="cali">Cali</option>
-          <option value="cartagena">Cartagena</option>
-          <option value="cucuta">Cúcuta</option>
-          <option value="Florencia">Florencia</option>
-          <option value="inirida">Inírida</option>
-          <option value="leticia">Leticia</option>
-          <option value="medellin">Medellín</option>
-          <option value="mitu">Mitú</option>
-          <option value="monteria">Monteria</option>
-          <option value="neiva">Neiva</option>
-          <option value="pasto">Pasto</option>
-          <option value="pereira">Pereira</option>
-          <option value="popayan">Popayán</option>
-          <option value="puerto-carreño">Puerto Carreño</option>
-          <option value="quibdo">Quibdó</option>
-          <option value="riohacha">Riohacha</option>
-          <option value="san-andres">San Andrés</option>
-          <option value="san-jose-del-guaviare">San José del Guaviare</option>
-          <option value="santa-marta">Santa Marta</option>
-          <option value="tulua">Tuluá</option>
-          <option value="valledupar">Valledupar</option>
-          <option value="villavicencio">Villavicencio</option>
-          <option value="yopal">Yopal</option>
-        </select>
-        <button type="submit">GUARDAR</button>
-      </form>
-    </section>
 
-    <section class="pantalla-grande">
-      <p>🚨 <strong>Solo disponible en dispositivos móviles</strong></p>
-      <p>Esta aplicación está diseñada exclusivamente para celulares o tablets. Por favor, accede desde uno de esos dispositivos.</p>
-    </section>
-  </main>
+  <!-- Contenido exclusivo para dispositivos móviles -->
+  <div class="mobile-only">
+    <div class="container-page">
+      <!-- Encabezado con logo -->
+      <header class="header-gradient">
+        <img src="./assets/images/logo2.png" alt="Logo ACME AIR" />
+      </header>
+
+      <!-- Contenedor del formulario -->
+      <div class="container">
+        <h1>Registro</h1>
+        <hr />
+        <form autocomplete="on" action="gracias.html" method="get">
+          <input type="text" name="nombre" placeholder="Nombre Completo" autocomplete="name" required />
+          <input type="text" name="identificacion" placeholder="No. Identificación" autocomplete="off" required />
+          <input type="email" name="email" placeholder="E-mail" autocomplete="email" required />
+          <input type="tel" name="telefono" placeholder="Teléfono" autocomplete="tel" required />
+
+          <select name="ciudad" required autocomplete="address-level2">
+            <option value="" disabled selected>Ciudad</option>
+            <option value="apartado">Apartadó</option>
+            <option value="armenia">Armenia</option>
+            <option value="barranquilla">Barranquilla</option>
+            <option value="bogota">Bogotá</option>
+            <option value="bucaramanga">Bucaramanga</option>
+            <option value="cali">Cali</option>
+            <option value="cartagena">Cartagena</option>
+            <option value="cucuta">Cúcuta</option>
+            <option value="florencia">Florencia</option>
+            <option value="inirida">Inírida</option>
+            <option value="leticia">Leticia</option>
+            <option value="medellin">Medellín</option>
+            <option value="mitu">Mitú</option>
+            <option value="monteria">Montería</option>
+            <option value="neiva">Neiva</option>
+            <option value="pasto">Pasto</option>
+            <option value="pereira">Pereira</option>
+            <option value="popayan">Popayán</option>
+            <option value="puerto-carreño">Puerto Carreño</option>
+            <option value="quibdo">Quibdó</option>
+            <option value="riohacha">Riohacha</option>
+            <option value="san-andres">San Andrés</option>
+            <option value="san-jose-del-guaviare">San José del Guaviare</option>
+            <option value="santa-marta">Santa Marta</option>
+            <option value="tulua">Tuluá</option>
+            <option value="valledupar">Valledupar</option>
+            <option value="villavicencio">Villavicencio</option>
+            <option value="yopal">Yopal</option>
+          </select>
+
+          <button type="submit">GUARDAR</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensaje para pantallas grandes -->
+  <div class="desktop-warning">
+    ⚠️ Esta aplicación solo está disponible en dispositivos móviles
+  </div>
+
 </body>
 </html>

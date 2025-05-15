@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pantalla de Carga</title>
+  <style>
+    /* Fondo blanco y centrado */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .nube {
+      position: absolute;
+      top: 40%;
+      width: 100px;
+      height: auto;
+      opacity: 0.7;
+      z-index: 1;
+    }
+
+    .nube-izquierda {
+      left: -120px;
+      animation: nubeIzquierda 5s linear infinite;
+    }
+
+    .nube-derecha {
+      right: -120px;
+      animation: nubeDerecha 5s linear infinite;
+    }
+
+    @keyframes nubeIzquierda {
+      0% { left: -120px; }
+      100% { left: 100%; }
+    }
+
+    @keyframes nubeDerecha {
+      0% { right: -120px; }
+      100% { right: 100%; }
+    }
+
+    .avion {
+      width: 120px;
+      z-index: 2;
+      animation: avionArribaAbajo 2s ease-in-out infinite;
+    }
+
+    @keyframes avionArribaAbajo {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Redirección automática después de 5 segundos -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "menu-principal.html";
+    }, 5000);
+  </script>
+</head>
+<body>
+
+  <!-- Nubes -->
+  <img src="./assets/images/nube1.png" alt="Nube Izquierda" class="nube nube-izquierda">
+  <img src="./assets/images/nube2.png" alt="Nube Derecha" class="nube nube-derecha">
+
+  <!-- Avión centrado -->
+  <img src="./assets/images/avion.png" alt="Avión" class="avion">
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar Vuelos | ACME AIR</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <div class="mobile-only">
+    <div class="container-page">
+
+      <!-- Encabezado con logo -->
+      <header class="header-gradient">
+        <img src="./assets/images/logo2.png" alt="Logo ACME AIR" />
+      </header>
+
+      <!-- Contenedor principal -->
+      <div class="container">
+
+        <!-- Usuario y cerrar sesión -->
+        <div class="user-header">
+          <img src="./assets/images/user.png" alt="Usuario" />
+          <div>
+            <strong>John Doe</strong><br />
+            <a href="index.html" class="link">Cerrar Sesión</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Título -->
+        <h1 style="text-align: center; font-size: 20px;">Búsqueda de Vuelos</h1>
+
+        <!-- Formulario -->
+        <form action="resultados.html" method="get">
+          <label class="checkbox">
+            <input type="checkbox" name="solo-ida" />
+            Solo ida
+          </label>
+
+          <input type="text" name="origen" placeholder="Origen" required />
+          <input type="text" name="destino" placeholder="Destino" required />
+          <input type="date" name="fecha-salida" placeholder="Fecha de salida" required />
+          <input type="date" name="fecha-regreso" placeholder="Fecha de regreso" />
+
+          <button type="submit">BUSCAR</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Advertencia en escritorio -->
+  <div class="desktop-warning">
+    ⚠️ Esta aplicación solo está disponible en dispositivos móviles
+  </div>
+
+</body>
+</html>
+

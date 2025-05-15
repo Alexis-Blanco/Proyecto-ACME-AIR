@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check-In | ACME AIR</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Solo para móviles -->
+  <div class="mobile-only">
+    <div class="container-page">
+
+      <!-- Encabezado -->
+      <header class="header-gradient">
+        <img src="./assets/images/logo2.png" alt="Logo ACME AIR" />
+      </header>
+
+      <div class="container">
+
+        <!-- Usuario -->
+        <div class="user-header">
+          <img src="./assets/images/user.png" alt="Usuario" />
+          <div>
+            <strong>John Doe</strong><br />
+            <a href="index.html" class="link">Cerrar Sesión</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Título -->
+        <h1 style="text-align: center; font-size: 20px;">Check In</h1>
+
+        <!-- Tarjeta vuelo -->
+        <div class="card">
+          <div class="card-left">
+            <img src="./assets/images/plane.png" alt="Avión" class="small-icon" />
+            <div class="flight-info">
+              <div class="flight-title">05:30 - 06:30</div>
+              <div class="flight-sub">1h 30 min</div>
+              <div class="flight-sub">Bogotá - Barranquilla</div>
+            </div>
+          </div>
+          <div class="card-right">
+            <div class="flight-code">VAA025</div>
+          </div>
+        </div>
+
+        <br>
+
+        <!-- Emergencia -->
+        <h2 style="font-size: 16px; font-weight: 600; margin-bottom: 12px; text-align: center;">
+          Contacto En Caso De Emergencia
+        </h2>
+
+        <form action="menu-principal.html" method="get">
+          <input type="text" name="contacto" placeholder="Nombre completo" required />
+          <input type="tel" name="telefono" placeholder="No. Teléfono Celular" required />
+          <button type="submit">GUARDAR</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensaje de advertencia en desktop -->
+  <div class="desktop-warning">
+    ⚠️ Esta aplicación solo está disponible en dispositivos móviles
+  </div>
+
+</body>
+</html>
+

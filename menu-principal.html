@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú Principal | ACME AIR</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Solo visible en móviles -->
+  <div class="mobile-only">
+    <div class="container-page">
+      <!-- Logo con fondo degradado -->
+      <header class="header-gradient">
+        <img src="./assets/images/logo2.png" alt="Logo ACME AIR" />
+      </header>
+
+      <!-- Contenedor con bienvenida y tarjetas -->
+      <div class="container">
+        <h2 style="text-align: center;">¡Hola John Doe!</h2>
+        <p style="text-align: center; margin-bottom: 10px;">¿Qué quieres hacer?</p>
+        <p style="text-align: center;">
+          <a href="index.html" class="link">Cerrar Sesión</a>
+        </p>
+
+        <div class="card-group">
+        <!-- Tarjeta 1 -->
+        <a href="buscar-vuelos.html" class="card">
+          <div class="card-content">
+            <img src="./assets/images/flight-icon.png" alt="Buscar vuelos" class="card-icon" />
+            <span class="card-text">Buscar vuelos</span>
+          </div>
+          <img src="./assets/images/arrow-right.png" alt="Ir" class="arrow-icon" />
+        </a>
+
+        <!-- Tarjeta 2 -->
+        <a href="checkin.html" class="card">
+          <div class="card-content">
+            <img src="./assets/images/check-in.png" alt="Check-In" class="card-icon" />
+            <span class="card-text">Check-In</span>
+          </div>
+          <img src="./assets/images/arrow-right.png" alt="Ir" class="arrow-icon" />
+        </a>
+
+        <!-- Tarjeta 3 -->
+        <a href="mis-vuelos.html" class="card">
+          <div class="card-content">
+            <img src="./assets/images/list-icon.png" alt="Mis vuelos" class="card-icon" />
+            <span class="card-text">Mis Vuelos</span>
+          </div>
+          <img src="./assets/images/arrow-right.png" alt="Ir" class="arrow-icon" />
+        </a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Solo para pantallas grandes -->
+  <div class="desktop-warning">
+    ⚠️ Esta aplicación solo está disponible en dispositivos móviles
+  </div>
+
+</body>
+</html>

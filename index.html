@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ACME AIR ✈️</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
-  <main class="container">
-    <header>
-      <img src="./assets/images/logoNombre.png" alt="ACME AIR Logo">
+  <main class="container-page">
+    <!-- Encabezado con logo -->
+    <header class="header-gradient">
+      <img src="./assets/images/logo1.png" alt="Logo ACME AIR" />
     </header>
 
-    <section class="form-section">
+    <!-- Contenedor del formulario de inicio de sesión -->
+    <div class="container">
       <h1>Iniciar Sesión</h1>
-
-      <form>
-        <input type="text" placeholder="Email" required>
-        <input type="password" placeholder="Contraseña" required>
+      <hr />
+      <form autocomplete="on" action="pantalla-carga.html" method="get">
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Contraseña" required />
 
         <label class="checkbox">
-          <input type="checkbox"> Recordar mis datos
+          <input type="checkbox" name="remember" /> Recordar mis datos
         </label>
 
         <button type="submit">INGRESAR</button>
       </form>
 
       <div class="extras">
-        <a href="registro.html">Crear cuenta</a>
-
-        <a href="recuperar-contraseña.html">¿Has olvidado tu contraseña?</a>
+        <a href="registro.html" class="link">Crear cuenta</a>
+        <a href="recuperar-contraseña.html" class="link">¿Has olvidado tu contraseña?</a>
       </div>
-    </section>
-
-    <section class="pantalla-grande">
-      <p>🚨 <strong>Solo disponible en dispositivos móviles</strong></p>
-      <p>Esta aplicación está diseñada exclusivamente para celulares o tablets. Por favor, accede desde uno de esos dispositivos.</p>
-    </section>
+    </div>
   </main>
+
+  <!-- Aviso para pantallas grandes -->
+  <div class="desktop-warning">
+    ⚠️ Esta aplicación solo está disponible en dispositivos móviles
+  </div>
 </body>
 </html>
